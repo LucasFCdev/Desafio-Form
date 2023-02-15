@@ -36,7 +36,7 @@
           </div>
           <div class="input-wrapper">
             <label for="password">Senha <span>(minimo 6 caracteres)</span></label>
-            <input type="password" id="password">
+            <input type="password" id="password" minlength="8">
           </div>
       </fieldset>
       <fieldset>
@@ -57,16 +57,37 @@
           <div class="time">
             <div class="input-wrapper">
               <label for="time-start1">Das</label>
-              <input type="date" id="time-start1">
+              <input type="time" id="time-start1">
             </div>
             <div class="input-wrapper">
-              <label for="time-start2">Até</label>
-              <input type="date" id="time-start2">
+              <label for="time-end">Até</label>
+              <input type="time" id="time-end">
             </div>
           </div>
-        </fieldset>  
+        </fieldset> 
+        
+        <fieldset class="sub-field">
+          <legend class="sub-legend">Segunda Mentoria</legend>
+          <div class="input-wrapper">
+            <label for="date-1">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="date-1">
+          </div>
+          <div class="time">
+            <div class="input-wrapper">
+              <label for="time-start1">Das</label>
+              <input type="time" id="time-start1">
+            </div>
+            <div class="input-wrapper">
+              <label for="time-end">Até</label>
+              <input type="time" id="time-end">
+            </div>
+          </div>
+        </fieldset> 
       </fieldset>
     </form>
+    <footer>
+      <input type="submit" name="Enviar" form="form">
+    </footer>
   </div>
 </body>
 </html>
